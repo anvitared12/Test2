@@ -3,13 +3,6 @@ pipeline {
     tools {
         maven 'maven'  // Use the exact name you set in Global Tool Configuration
     }
-    stage{
-        stage('Checkout Code'){
-            steps{
-                git url:'https://github.com/anvitared12/Jenkins.git',branch:main
-            }
-        }
-    }
     stages {
         stage('Build') {
             steps {
